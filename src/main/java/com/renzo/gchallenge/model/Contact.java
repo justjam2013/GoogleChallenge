@@ -1,15 +1,15 @@
 package com.renzo.gchallenge.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Contact {
 
     private String firstName;
     private String lastName;
     private Gender gender;
-    private LocalDateTime dob;
+    private LocalDate dob;
 
-    public Contact(String firstName, String lastName, Gender gender, LocalDateTime dob) {
+    public Contact(String firstName, String lastName, Gender gender, LocalDate dob) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -40,11 +40,11 @@ public class Contact {
         this.gender = gender;
     }
 
-    public LocalDateTime getDob() {
+    public LocalDate getDob() {
         return this.dob;
     }
 
-    public void setDob(LocalDateTime dob) {
+    public void setDob(LocalDate dob) {
         this.dob = dob;
     }
 
