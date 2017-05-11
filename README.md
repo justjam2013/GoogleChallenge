@@ -1,9 +1,9 @@
-# GoogleChallenge
+# GumtreeChallenge
 
-To run the Google Challenge solution, make sure that GoogleChallenge is executable:
+To run the Gumtree Challenge solution, make sure that GumtreeChallenge is executable:
 
-`$ chmod u+x GoogleChallenge`
+`$ chmod u+x GumtreeChallenge`
 
-To execute GoogleChallenge:
+To execute GumtreeeChallenge:
 
-`$ ./GoogleChallenge`
+`$ ./GumtreeChallenge`

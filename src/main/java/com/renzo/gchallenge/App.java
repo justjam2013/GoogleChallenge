@@ -26,7 +26,7 @@ public class App {
             Collection<Contact> contacts = persistenceService.getContacts();
 
             System.out.println("\n************************************************************\n");
-            System.out.println("\t\tGoogle Challenge\n");
+            System.out.println("\t\tGumtree Challenge\n");
 
             System.out.println("\tQ1. How many males are in the address book?");
             long maleCount = getMaleCount(contacts);
