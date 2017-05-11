@@ -25,17 +25,26 @@ public class App {
             PersistenceService persistenceService = new FilePersistenceService();
             Collection<Contact> contacts = persistenceService.getContacts();
 
-            System.out.println("1. How many males are in the address book?");
+            System.out.println("\n************************************************************\n");
+            System.out.println("\t\tGoogle Challenge\n");
+
+            System.out.println("\tQ1. How many males are in the address book?");
             long maleCount = getMaleCount(contacts);
-            System.out.println("Male count: " + maleCount);
+            System.out.println("\tMale count: " + maleCount);
 
-            System.out.println("2. Who is the oldest person in the address book?");
+            System.out.println();
+
+            System.out.println("\tQ2. Who is the oldest person in the address book?");
             Contact oldestContact = getOldestContact(contacts);
-            System.out.println("Oldest contact: " + oldestContact.getFirstName() + " " + oldestContact.getLastName());
+            System.out.println("\tOldest contact: " + oldestContact.getFirstName() + " " + oldestContact.getLastName());
 
-            System.out.println("3. How many days older is Bill than Paul?");
+            System.out.println();
+
+            System.out.println("\tQ3. How many days older is Bill than Paul?");
             long daysBetween = getDaysBetweenDob(contacts, "Bill", "Paul");
-            System.out.println("Days Bill is older than Paul: " + daysBetween);
+            System.out.println("\tDays Bill is older than Paul: " + daysBetween);
+
+            System.out.println("\n\n************************************************************\n");
         }
         catch (PersistenceException pe) {
             System.out.println("An error occurred: ");
